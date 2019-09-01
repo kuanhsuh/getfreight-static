@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans text-gray-800">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css">
+  <title>Document</title>
+
+  <style>
+    td {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="py-4 sticky top-0 bg-white shadow z-50">
+    <div class="container mx-auto px-4 md:px-0">
+      <div class="flex flex-wrap justify-between items-end relative">
+        <a href="#">
+          <div class="inline-block h-12 bg-gray-500 w-32 rounded"></div>
+        </a>
+        <ul class="hidden md:flex md:items-end md:w-auto">
+          <li class="px-2"><a href="#" class="rounded inline-block px-8 py-3 bg-gray-300">註冊</a></li>
+          <li class="px-2"><a href="#" class="rounded inline-block px-8 py-3 bg-blue-700 text-white">登陸</a></li>
+        </ul>
+        <span onclick="toggleMenu()" class="block md:hidden">
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+        </span>
+        <ul id="responsive" class="w-full text-center md:hidden bg-white shadow-md"
+          style="position: absolute; z-index: 10; top: 73px; left: 0">
+          <li class="py-2"><a href="#">註冊</a></li>
+          <li class="py-2"><a href="#">登陸</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <img src="https://via.placeholder.com/1200x500" alt="" class="w-full">
+  </header>
+
+  <!-- Section 推薦廠商-->
+  <section class="py-8">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap justify-center -mx-2">
+        <div class="w-full md:w-9/12 border p-6" style="border-top: 10px solid #2b6cb0;">
+          <img src="https://via.placeholder.com/800x400" alt="" class="w-full">
+          <table class="mt-4">
+            <tbody>
+              <tr>
+                <td>裝貨港: ABC港口</td>
+                <td>卸貨港: DEF港口</td>
+              </tr>
+              <tr>
+                <td>並櫃費: 1000</td>
+                <td>文件費: 1000</td>
+              </tr>
+              <tr>
+                <td>電放費: 1000</td>
+                <td>傳輸費: 1000</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 class="font-medium text-2xl mt-6 mb-2">描述</h2>
+          <p class="leading-loose">
+            狀張不，意食要羅居時地度加之母是費小由子，性視書人系麼大照此記來體氣水由高；飯溫從們到想球是苦是角們。到運的。裝過子不開母會有老家成到管易用漸、當但只，重不位學些身大。服何發源意知裡學。叫要系友中起性才打口不道出現同生洲們這，定不弟度國字報一不真戲大流英們聲，了呢北商到微牛的到離領同說面。或前德的海通空立然極很美國死！感得位約而爸題我戰？還樓為管，了小至以方得和景建十，白解法，人太票常市中未走會再像發別道被我英？能的廣進上自作法不手人地屋東錢士人手個修後一來新花！樹國到他。
+          </p>
+
+          <div class="flex justify-between mt-8">
+            <a href="#" class="rounded inline-block px-8 py-3 mr-2 border border-blue-700 text-blue-700">上一則廣告</a>
+            <a href="#" class="rounded inline-block px-8 py-3 mr-2 border border-blue-700 text-blue-700">下一則廣告</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer 頁尾 -->
+  <footer class="bg-blue-900 py-8" style="height: 300px;"></footer>
+
+  <script>
+    function toggleMenu() {
+      var navMenu = document.querySelector("#responsive")
+      navMenu.classList.toggle("hidden");
+    }
+
+  </script>
+</body>
+
+</html>
