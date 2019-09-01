@@ -27,8 +27,8 @@
           <div class="inline-block h-12 bg-gray-500 w-32 rounded"></div>
         </a>
         <ul class="hidden md:flex md:items-end md:w-auto">
-          <li class="px-2">歡迎: normal@gmail.com <span
-              class="text-xs p-2 rounded inline-block bg-teal-400 text-white">一般使用者</span>
+          <li class="px-2">歡迎: transport@gmail.com <span
+              class="text-xs p-2 rounded inline-block bg-teal-400 text-white">運輸業者</span>
           </li>
           <li class="px-2"><a href="#" class="rounded inline-block px-8 py-3 bg-blue-700 text-white">儲值</a></li>
           <li class="px-2"><a href="#" class="rounded inline-block px-8 py-3 bg-gray-300">登出</a></li>
@@ -49,54 +49,78 @@
 
   <section>
     <div class="flex">
-      <div class="w-2/12 h-screen">
+      <div class="w-2/12">
         <div class="py-6 px-6 flex items-center font-light" style="border-bottom: 1px solid #CFD8DC;">
           <span class="inline-block rounded-full h-12 w-12 bg-blue-600 mr-4"></span>
-          normal 用戶
+          transport 用戶
         </div>
         <div class="py-4 px-6 flex items-center  font-medium" style="border-bottom: 1px solid #CFD8DC;">
           <a href="#">後台首頁</a>
         </div>
         <div class="py-4 px-6 font-medium" style="border-bottom: 1px solid #CFD8DC;">
-          <h3 class="mb-2">詢價單</h3>
+          <h3 class="mb-2">報價單</h3>
           <ul class="font-normal">
-            <li class="py-1"><a href="#">所有詢價單</a></li>
-            <li class="py-1"><a href="#">新增詢價單(海運/併櫃)</a></li>
-            <li class="py-1"><a href="#">新增詢價單(空運)</a></li>
-            <li class="py-1"><a href="#">新增詢價單(其他)</a></li>
+            <li class="py-1"><a href="#">所有報價單</a></li>
+          </ul>
+        </div>
+        <div class="py-4 px-6 font-medium" style="border-bottom: 1px solid #CFD8DC;">
+          <h3 class="mb-2">廣告</h3>
+          <ul class="font-normal">
+            <li class="py-1"><a href="#">跑馬燈-海運(並櫃)</a></li>
+            <li class="py-1"><a href="#">跑馬燈-海運(整櫃)</a></li>
+            <li class="py-1"><a href="#">跑馬燈-空運</a></li>
+            <li class="py-1"><a href="#">公司形象</a></li>
+            <li class="py-1"><a href="#">歷年廣告</a></li>
           </ul>
         </div>
         <div class="py-4 px-6 font-medium" style="border-bottom: 1px solid #CFD8DC;">
           <h3 class="mb-2">會員</h3>
           <ul class="font-normal">
             <li class="py-1"><a href="#">修改基本資料</a></li>
+            <li class="py-1"><a href="#">儲值點數</a></li>
+            <li class="py-1"><a href="#">點數歷史</a></li>
           </ul>
         </div>
       </div>
-      <div class="w-10/12 bg-gray-200 h-screen">
+      <div class="w-10/12 bg-gray-200">
         <div class="container mx-auto py-8 max-w-5xl">
           <!-- Quick Summary -->
-          <div class="flex flex-wrap">
+          <div class="flex flex-wrap justify-between">
             <div class="w-full md:w-3/12 flex bg-white">
               <img src="https://via.placeholder.com/100x100" alt="">
               <div class="px-4 flex flex-col items-center justify-center">
-                <div class=" font-light">詢價單</di>
+                <div class=" font-light">報價單</di>
                   <div class="text-3xl font-medium">2</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-3/12 flex bg-white">
+              <img src="https://via.placeholder.com/100x100" alt="">
+              <div class="px-4 flex flex-col items-center justify-center">
+                <div class=" font-light">廣告</di>
+                  <div class="text-3xl font-medium">3</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-3/12 flex bg-white">
+              <img src="https://via.placeholder.com/100x100" alt="">
+              <div class="px-4 flex flex-col items-center justify-center">
+                <div class=" font-light">點數</di>
+                  <div class="text-3xl font-medium">2000</div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Charts -->
-          <h2 class="font-medium text-xl mt-12">詢價單</h2>
+          <h2 class="font-medium text-xl mt-12">報價單</h2>
           <table class="table w-full mt-4 bg-white">
             <thead class="bg-teal-500 text-white font-medium">
               <tr>
-                <th scope="col">詢價單編號</th>
-                <th scope="col" class="w-2/5">詢價單</th>
+                <th scope="col">報價單</th>
+                <th scope="col" class="w-2/5">詢價單項目</th>
                 <th scope="col">報價截止日</th>
-                <th scope="col">最高報價</th>
-                <th scope="col">報價人數</th>
+                <th scope="col">報價金額</th>
                 <th scope="col">動作</th>
               </tr>
             </thead>
@@ -106,7 +130,6 @@
                 <td class="w-2/5">[運送方式不拘] 從 台灣高雄 到 中國上海...</td>
                 <td>2019-09-31</td>
                 <td>$8000</td>
-                <td>3</td>
                 <td>讀取 | 更改 | 刪除</td>
               </tr>
               <tr>
@@ -114,7 +137,6 @@
                 <td class="w-2/5">[運送方式不拘] 從 台灣高雄 到 中國上海...</td>
                 <td>2019-09-31</td>
                 <td>$8000</td>
-                <td>3</td>
                 <td>讀取 | 更改 | 刪除</td>
               </tr>
               <tr>
@@ -122,21 +144,86 @@
                 <td class="w-2/5">[運送方式不拘] 從 台灣高雄 到 中國上海...</td>
                 <td>2019-09-31</td>
                 <td>$8000</td>
-                <td>3</td>
-                <td>讀取 | 更改 | 刪除</td>
-              </tr>
-              <tr>
-                <th scope="row">23242</th>
-                <td class="w-2/5">[運送方式不拘] 從 台灣高雄 到 中國上海...</td>
-                <td>2019-09-31</td>
-                <td>$8000</td>
-                <td>3</td>
                 <td>讀取 | 更改 | 刪除</td>
               </tr>
             </tbody>
           </table>
           <div class="mt-4 font-medium text-teal-900 text-right">
-            <a href="#">更多詢價單>></a>
+            <a href="#">更多報單>></a>
+          </div>
+          <!-- Charts -->
+          <h2 class="font-medium text-xl mt-12">廣告</h2>
+          <table class="table w-full mt-4 bg-white">
+            <thead class="bg-teal-500 text-white font-medium">
+              <tr>
+                <th scope="col">廣告編號</th>
+                <th scope="col" class="w-2/5">廣告內容</th>
+                <th scope="col">到期日</th>
+                <th scope="col">點數扣除</th>
+                <th scope="col">動作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">23242</th>
+                <td class="w-2/5">[運送方式不拘] 從 台灣高雄 到 中國上海...</td>
+                <td>2019-09-31</td>
+                <td>$8000</td>
+                <td>讀取 | 更改 | 刪除</td>
+              </tr>
+              <tr>
+                <th scope="row">23242</th>
+                <td class="w-2/5">[運送方式不拘] 從 台灣高雄 到 中國上海...</td>
+                <td>2019-09-31</td>
+                <td>$8000</td>
+                <td>讀取 | 更改 | 刪除</td>
+              </tr>
+              <tr>
+                <th scope="row">23242</th>
+                <td class="w-2/5">[運送方式不拘] 從 台灣高雄 到 中國上海...</td>
+                <td>2019-09-31</td>
+                <td>$8000</td>
+                <td>讀取 | 更改 | 刪除</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mt-4 font-medium text-teal-900 text-right">
+            <a href="#">更多廣告>></a>
+          </div>
+          <!-- Charts -->
+          <h2 class="font-medium text-xl mt-12">點數</h2>
+          <table class="table w-full mt-4 bg-white">
+            <thead class="bg-teal-500 text-white font-medium">
+              <tr>
+                <th scope="col">點數</th>
+                <th scope="col" class="w-2/5">方案</th>
+                <th scope="col">發生日期</th>
+                <th scope="col">點數(-/+)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">23242</th>
+                <td class="w-2/5">儲值方案#123</td>
+                <td>2019/05/22</td>
+                <td>+$500</td>
+              </tr>
+              <tr>
+                <th scope="row">23242</th>
+                <td class="w-2/5">報價#12345</td>
+                <td>2019/05/22</td>
+                <td>-$500</td>
+              </tr>
+              <tr>
+                <th scope="row">23242</th>
+                <td class="w-2/5">報價#12345</td>
+                <td>2019/05/22</td>
+                <td>+$500</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mt-4 font-medium text-teal-900 text-right">
+            <a href="#">點數歷史>></a>
           </div>
         </div>
       </div>
