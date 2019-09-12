@@ -83,106 +83,59 @@
         </div>
       </div>
       <div class="w-10/12 bg-gray-200">
-        <div class="container mx-auto py-8 max-w-5xl">
-          <!-- Quick Summary -->
-          <div class="flex flex-wrap justify-between">
-            <a href="#" class="w-full md:w-3/12 bg-blue-700 text-white h-24 flex justify-center items-center rounded">
-              儲值點數
-            </a>
-          </div>
+        <div class="container mx-auto py-8 max-w-3xl bg-white my-16">
+          <h2 class="text-center text-3xl font-medium pb-4" style="border-bottom: 3px solid #2b6cb0;">儲值點數</h2>
 
-          <!-- Charts -->
-          <h2 class="font-medium text-xl mt-12">點數總攬</h2>
-          <table class="table w-full mt-4 bg-white">
-            <tbody>
-              <tr>
-                <th scope="row" class="w-2/5 bg-teal-500 text-white font-medium">所有點數</th>
-                <td class="w-3/5">1000</td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- Charts -->
-          <h2 class="font-medium text-xl mt-12">儲值紀錄</h2>
-          <table class="table w-full mt-4 bg-white">
-            <thead class="bg-teal-500 text-white font-medium">
-              <tr>
-                <th scope="col">儲值編號</th>
-                <th scope="col">日期</th>
-                <th scope="col" class="w-2/5">項目</th>
-                <th scope="col">點數額度</th>
-                <th scope="col">明細</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">23242</th>
-                <td>2019.09.05</td>
-                <td class="w-2/5">儲值紀錄-12345</td>
-                <td>3000</td>
-                <td>讀取</td>
-              </tr>
-              <tr>
-                <th scope="row">23242</th>
-                <td>2019.09.05</td>
-                <td class="w-2/5">儲值紀錄-12345</td>
-                <td>3000</td>
-                <td>讀取</td>
-              </tr>
-              <tr>
-                <th scope="row">23242</th>
-                <td>2019.09.05</td>
-                <td class="w-2/5">儲值紀錄-12345</td>
-                <td>3000</td>
-                <td>讀取</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="mt-4 font-medium text-teal-900 text-right">
-            <a href="#">更多儲值紀錄>></a>
+          <div class="flex flex-wrap mt-6 px-4">
+            <div class="w-full md:w-4/12 text-center text-2xl font-normal">付款/方案</div><!-- Left Col -->
+            <div class="w-full md:w-8/12">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3 mb-6 md:mb-0">
+                  <span class="text-gray-700 text-2xl">方案</span>
+                  <div class="mt-2">
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio" name="radio" value="1" checked>
+                        <span class="ml-2">方案1: 儲值500NT獲得500點數</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio" name="radio" value="2">
+                        <span class="ml-2">方案1: 儲值1000NT獲得1500點數</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio" name="radio" value="3">
+                        <span class="ml-2">方案3: 儲值2000NT獲得3000點數</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 mt-6 mb-6 md:mb-0">
+                  <span class="text-gray-700 text-2xl">付款方式</span>
+                  <div class="mt-2">
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio" name="radio" value="1" checked>
+                        <span class="ml-2">行用卡付款</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END ROW -->
+            </div> <!-- Righ Col -->
+
           </div>
-          <!-- Charts -->
-          <!-- Charts -->
-          <h2 class="font-medium text-xl mt-12">點數明細</h2>
-          <table class="table w-full mt-4 bg-white">
-            <thead class="bg-teal-500 text-white font-medium">
-              <tr>
-                <th scope="col">儲值編號</th>
-                <th scope="col">日期</th>
-                <th scope="col" class="w-2/5">項目</th>
-                <th scope="col">點數額度</th>
-                <th scope="col">明細</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">23242</th>
-                <td>2019.09.05</td>
-                <td class="w-2/5">儲值紀錄-12345</td>
-                <td>3000</td>
-                <td>讀取</td>
-              </tr>
-              <tr>
-                <th scope="row">23242</th>
-                <td>2019.09.05</td>
-                <td class="w-2/5">儲值紀錄-12345</td>
-                <td>3000</td>
-                <td>讀取</td>
-              </tr>
-              <tr>
-                <th scope="row">23242</th>
-                <td>2019.09.05</td>
-                <td class="w-2/5">儲值紀錄-12345</td>
-                <td>3000</td>
-                <td>讀取</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="mt-4 font-medium text-teal-900 text-right">
-            <a href="#">更多點數明細>></a>
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-4/12"></div><!-- Left Col -->
+            <div class="w-full md:w-8/12 text-center">
+              <button class="rounded inline-block px-8 py-3 bg-blue-700 text-white">送出</button>
+            </div><!-- Left Col -->
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- Footer 頁尾 -->
