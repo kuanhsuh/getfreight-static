@@ -75,7 +75,7 @@
       </div>
       <div class="w-10/12 bg-gray-200">
         <div class="container mx-auto py-8 max-w-5xl bg-white my-16">
-          <h2 class="text-center text-3xl font-medium pb-4" style="border-bottom: 3px solid #2b6cb0;">空運報價單-報告</h2>
+          <h2 class="text-center text-3xl font-medium pb-4" style="border-bottom: 3px solid #2b6cb0;">海運報價單-報告</h2>
 
           <div class="flex flex-wrap mt-6 px-4">
             <div class="w-full md:w-3/12 text-center text-2xl font-normal">詢問單資料</div><!-- Left Col -->
@@ -99,13 +99,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">起飛機場</td>
-                    <td class="py-4 px-6 border border-grey-200">高雄機場
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">裝貨港</td>
+                    <td class="py-4 px-6 border border-grey-200">XXX裝貨港
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">目的地機場</td>
-                    <td class="py-4 px-6 border border-grey-200">上海機場
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">卸貨港</td>
+                    <td class="py-4 px-6 border border-grey-200">xxx卸貨港
                     </td>
                   </tr>
                 </tbody>
@@ -119,12 +119,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">櫃型 | 數量</td>
-                    <td class="py-4 px-6 border border-grey-200">自自時童因 | 3
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">貨型</td>
+                    <td class="py-4 px-6 border border-grey-200">自自時童因
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">卡車/拖車需求</td>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">數量</td>
+                    <td class="py-4 px-6 border border-grey-200">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">報關需求</td>
                     <td class="py-4 px-6 border border-grey-200">
                     </td>
                   </tr>
@@ -146,28 +151,70 @@
               <table class="text-left w-full border-collapse">
                 <tbody>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">空運費含燃油兵險費(USD)</td>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">海運費(USD)/20</td>
                     <td class="py-4 px-6 border border-grey-200">1000
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">倉租費(NTD)/per kg(1-299)</td>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">海運費(USD)/40</td>
                     <td class="py-4 px-6 border border-grey-200">20000
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">倉租費(NTD)/per kg(300以上)</td>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">海運費(USD)/40'HQ</td>
                     <td class="py-4 px-6 border border-grey-200">20000
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">報關費(NTD)/SET</td>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">海運費(USD)/45</td>
                     <td class="py-4 px-6 border border-grey-200">20000
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">連線費(NTD)/SET</td>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">吊櫃費(USD)/20</td>
                     <td class="py-4 px-6 border border-grey-200">20000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">吊櫃費(USD)/40
+                    </td>
+                    <td class="py-4 px-6 border border-grey-200">10000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">吊櫃費(USD)/40'HQ
+                    </td>
+                    <td class="py-4 px-6 border border-grey-200">10000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">封條費(USD)/CONTAINER
+                    </td>
+                    <td class="py-4 px-6 border border-grey-200">10000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">傳輸費(USD)/SET
+                    </td>
+                    <td class="py-4 px-6 border border-grey-200">10000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">文件費(NTD)/SET
+                    </td>
+                    <td class="py-4 px-6 border border-grey-200">10000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">電放費(NTD)/SET
+                    </td>
+                    <td class="py-4 px-6 border border-grey-200">10000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">LSS封條(USD)/SET
+                    </td>
+                    <td class="py-4 px-6 border border-grey-200">10000
                     </td>
                   </tr>
                   <tr>
@@ -187,13 +234,8 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">航空公司</td>
-                    <td class="py-4 px-6 border border-grey-200">Eva Air
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">卡車/拖車需求</td>
-                    <td class="py-4 px-6 border border-grey-200">
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">船公司</td>
+                    <td class="py-4 px-6 border border-grey-200">Eva Sea
                     </td>
                   </tr>
                   <tr>
@@ -202,7 +244,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="py-4 px-6 border border-grey-200 w-3/12">預計航程/SET</td>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">預計航程 (天數 最多70天)</td>
                     <td class="py-4 px-6 border border-grey-200">
                     </td>
                   </tr>
