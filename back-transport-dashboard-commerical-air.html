@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans text-gray-800">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css">
+  <title>Document</title>
+  <style>
+    th,
+    td {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="py-4 sticky top-0 bg-white shadow z-50">
+    <div class="container mx-auto px-4 md:px-0">
+      <div class="flex flex-wrap justify-between items-end relative">
+        <a href="#">
+          <div class="inline-block h-12 bg-gray-500 w-32 rounded"></div>
+        </a>
+        <ul class="hidden md:flex md:items-end md:w-auto">
+          <li class="px-2">歡迎: transport@gmail.com <span
+              class="text-xs p-2 rounded inline-block bg-teal-400 text-white">運輸業者</span>
+          </li>
+          <li class="px-2"><a href="#" class="rounded inline-block px-8 py-3 bg-blue-700 text-white">儲值</a></li>
+          <li class="px-2"><a href="#" class="rounded inline-block px-8 py-3 bg-gray-300">登出</a></li>
+        </ul>
+        <span onclick="toggleMenu()" class="block md:hidden">
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+        </span>
+        <ul id="responsive" class="w-full text-center md:hidden bg-white shadow-md"
+          style="position: absolute; z-index: 10; top: 73px; left: 0">
+          <li class="py-2"><a href="#">註冊</a></li>
+          <li class="py-2"><a href="#">登陸</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="flex">
+      <div class="w-2/12">
+        <div class="py-6 px-6 flex items-center font-light" style="border-bottom: 1px solid #CFD8DC;">
+          <span class="inline-block rounded-full h-12 w-12 bg-blue-600 mr-4"></span>
+          transport 用戶
+        </div>
+        <div class="py-4 px-6 flex items-center  font-medium" style="border-bottom: 1px solid #CFD8DC;">
+          <a href="#">後台首頁</a>
+        </div>
+        <div class="py-4 px-6 font-medium" style="border-bottom: 1px solid #CFD8DC;">
+          <h3 class="mb-2">報價單</h3>
+          <ul class="font-normal">
+            <li class="py-1"><a href="#">所有報價單</a></li>
+          </ul>
+        </div>
+        <div class="py-4 px-6 font-medium" style="border-bottom: 1px solid #CFD8DC;">
+          <h3 class="mb-2">廣告</h3>
+          <ul class="font-normal">
+            <li class="py-1"><a href="#">跑馬燈-海運(並櫃)</a></li>
+            <li class="py-1"><a href="#">跑馬燈-海運(整櫃)</a></li>
+            <li class="py-1"><a href="#">跑馬燈-空運</a></li>
+            <li class="py-1"><a href="#">公司形象</a></li>
+            <li class="py-1"><a href="#">歷年廣告</a></li>
+          </ul>
+        </div>
+        <div class="py-4 px-6 font-medium" style="border-bottom: 1px solid #CFD8DC;">
+          <h3 class="mb-2">會員</h3>
+          <ul class="font-normal">
+            <li class="py-1"><a href="#">修改基本資料</a></li>
+            <li class="py-1"><a href="#">儲值點數</a></li>
+            <li class="py-1"><a href="#">點數歷史</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-10/12 bg-gray-200">
+        <div class="container mx-auto py-8 max-w-5xl bg-white my-16">
+          <h2 class="text-center text-3xl font-medium pb-4" style="border-bottom: 3px solid #2b6cb0;">廣告-空運報價單</h2>
+          <div class="flex flex-wrap mt-6 px-4">
+            <div class="w-full md:w-3/12 text-center text-2xl font-normal">基本資料</div><!-- Left Col -->
+            <div class="w-full md:w-9/12">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    標題
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
+                </div>
+              </div>
+              <!--END ROW -->
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    起飛機場
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
+                </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    目的地機場
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
+                </div>
+              </div>
+              <!--END ROW -->
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    報價單截止日
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="date" placeholder=""> <span class="text-sm"></span>
+                </div>
+              </div>
+              <!--END ROW -->
+            </div> <!-- Righ Col -->
+          </div>
+          <div class="flex flex-wrap mt-6 px-4">
+            <div class="w-full md:w-3/12 text-center text-2xl font-normal">費用</div><!-- Left Col -->
+            <div class="w-full md:w-9/12">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    空運費含燃油兵險費(USD)
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-11/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/kg</span>
+                </div>
+              </div> <!-- END ROW -->
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    倉租費(NTD)
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/per kg(1-299)</span>
+                </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    &nbsp;
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/per kg(300以上)</span>
+                </div>
+              </div>
+              <!--END ROW -->
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    報關費(NTD)
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/SET</span>
+                </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    連線費(NTD)
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/SET</span>
+                </div>
+              </div>
+              <!--END ROW -->
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    傳輸費(USD)
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/SET</span>
+                </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                </div>
+              </div>
+              <!--END ROW -->
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    其他費用
+                  </label>
+                  <textarea
+                    class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-64"
+                    id="grid-first-name" placeholder=""></textarea>
+                </div>
+              </div>
+              <!--END ROW -->
+            </div> <!-- Righ Col -->
+
+          </div>
+          <div class="flex flex-wrap mt-6 px-4">
+            <div class="w-full md:w-3/12 text-center text-2xl font-normal">航班</div><!-- Left Col -->
+            <div class="w-full md:w-9/12">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    報價期限(進倉)
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="date" placeholder=""> <span class="text-sm"></span>
+                </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    航空公司
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
+                </div>
+              </div>
+              <!--END ROW -->
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <span>一週幾航班</span>
+                  <div class="mt-2">
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox" checked>
+                        <span class="ml-2">禮拜一</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">禮拜二</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">禮拜三</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">禮拜四</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">禮拜五</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">禮拜六</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">禮拜日</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    預計航程(天數)
+                  </label>
+                  <input
+                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
+                </div>
+
+                <div class="w-full px-3 mt-4 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
+                    其他注意事項
+                  </label>
+                  <textarea
+                    class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-64"
+                    id="grid-first-name" placeholder=""></textarea>
+                </div>
+              </div>
+              <!--END ROW -->
+            </div> <!-- Righ Col -->
+          </div>
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-3/12"></div><!-- Left Col -->
+            <div class="w-full md:w-9/12 text-center">
+              <button class="rounded inline-block px-8 py-3 bg-blue-700 text-white">送出</button>
+            </div><!-- Left Col -->
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer 頁尾 -->
+  <footer class="bg-blue-900 py-8" style="height: 300px;"></footer>
+
+  <script>
+    function toggleMenu() {
+      var navMenu = document.querySelector("#responsive")
+      navMenu.classList.toggle("hidden");
+    }
+
+  </script>
+</body>
+
+</html>
