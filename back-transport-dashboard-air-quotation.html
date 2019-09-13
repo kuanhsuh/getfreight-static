@@ -75,7 +75,7 @@
       </div>
       <div class="w-10/12 bg-gray-200">
         <div class="container mx-auto py-8 max-w-5xl bg-white my-16">
-          <h2 class="text-center text-3xl font-medium pb-4" style="border-bottom: 3px solid #2b6cb0;">空運報價單</h2>
+          <h2 class="text-center text-3xl font-medium pb-4" style="border-bottom: 3px solid #2b6cb0;">空運報價單-報告</h2>
 
           <div class="flex flex-wrap mt-6 px-4">
             <div class="w-full md:w-3/12 text-center text-2xl font-normal">詢問單資料</div><!-- Left Col -->
@@ -140,207 +140,104 @@
           </div> <!-- End Row -->
           <hr class="mt-10">
           <div class="flex flex-wrap mt-6 px-4">
-            <div class="w-full md:w-3/12 text-center text-3xl font-medium">報價單</div><!-- Left Col -->
-          </div>
-          <div class="flex flex-wrap mt-6 px-4">
-            <div class="w-full md:w-3/12 text-center text-2xl font-normal">費用</div><!-- Left Col -->
+            <div class="w-full md:w-3/12 text-center text-2xl font-normal">報價單</div><!-- Left Col -->
             <div class="w-full md:w-9/12">
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    空運費含燃油兵險費(USD)
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-11/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/kg</span>
-                </div>
-              </div> <!-- END ROW -->
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    倉租費(NTD)
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/per kg(1-299)</span>
-                </div>
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    &nbsp;
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/per kg(300以上)</span>
-                </div>
-              </div>
-              <!--END ROW -->
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    報關費(NTD)
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/SET</span>
-                </div>
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    連線費(NTD)
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/SET</span>
-                </div>
-              </div>
-              <!--END ROW -->
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    傳輸費(USD)
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/SET</span>
-                </div>
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                </div>
-              </div>
-              <!--END ROW -->
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    其他費用
-                  </label>
-                  <textarea
-                    class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-64"
-                    id="grid-first-name" placeholder=""></textarea>
-                </div>
-              </div>
-              <!--END ROW -->
-            </div> <!-- Righ Col -->
+              <h3 class="text-xl mb-2 italic">費用</h3>
+              <table class="text-left w-full border-collapse">
+                <tbody>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">空運費含燃油兵險費(USD)</td>
+                    <td class="py-4 px-6 border border-grey-200">1000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">倉租費(NTD)/per kg(1-299)</td>
+                    <td class="py-4 px-6 border border-grey-200">20000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">倉租費(NTD)/per kg(300以上)</td>
+                    <td class="py-4 px-6 border border-grey-200">20000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">報關費(NTD)/SET</td>
+                    <td class="py-4 px-6 border border-grey-200">20000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">連線費(NTD)/SET</td>
+                    <td class="py-4 px-6 border border-grey-200">20000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">其他費用
+                    </td>
+                    <td class="py-4 px-6 border border-grey-200">10000
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 class="text-xl mt-4 mb-2 italic">日期</h3>
+              <table class="text-left w-full border-collapse">
+                <tbody>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">報關期限</td>
+                    <td class="py-4 px-6 border border-grey-200">09/11/2010
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">航空公司</td>
+                    <td class="py-4 px-6 border border-grey-200">Eva Air
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">卡車/拖車需求</td>
+                    <td class="py-4 px-6 border border-grey-200">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">一週幾航班</td>
+                    <td class="py-4 px-6 border border-grey-200">禮拜一，禮拜三
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">預計航程/SET</td>
+                    <td class="py-4 px-6 border border-grey-200">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 class="text-xl mt-4 mb-2 italic">聯絡方式</h3>
+              <table class="text-left w-full border-collapse">
+                <tbody>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">名字</td>
+                    <td class="py-4 px-6 border border-grey-200">Danny Huang
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12">
+                      電話</td>
+                    <td class="py-4 px-6 border border-grey-200">0985-111-222
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 border border-grey-200 w-3/12"></td>
+                    <td class="py-4 px-6 border border-grey-200">Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit. Cupiditate minus, aliquid odit laboriosam, illum minima iure fugiat voluptate, tempore in
+                      sit. Repudiandae modi, nostrum laudantium debitis incidunt odio saepe eligendi?
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
 
-          </div>
-          <div class="flex flex-wrap mt-6 px-4">
-            <div class="w-full md:w-3/12 text-center text-2xl font-normal">日期</div><!-- Left Col -->
-            <div class="w-full md:w-9/12">
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    報關期限
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
-                </div>
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    航空公司
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
-                </div>
-              </div>
-              <!--END ROW -->
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <span>一週幾航班</span>
-                  <div class="mt-2">
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox" checked>
-                        <span class="ml-2">禮拜一</span>
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox">
-                        <span class="ml-2">禮拜二</span>
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox">
-                        <span class="ml-2">禮拜三</span>
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox">
-                        <span class="ml-2">禮拜四</span>
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox">
-                        <span class="ml-2">禮拜五</span>
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox">
-                        <span class="ml-2">禮拜六</span>
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox">
-                        <span class="ml-2">禮拜日</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    預計航程
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-7/12 bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm">/SET</span>
-                </div>
-              </div>
-              <!--END ROW -->
-            </div> <!-- Righ Col -->
-          </div>
-          <div class="flex flex-wrap mt-6 px-4">
-            <div class="w-full md:w-3/12 text-center text-2xl font-normal">聯絡方式</div><!-- Left Col -->
-            <div class="w-full md:w-9/12">
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    名字
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
-                </div>
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    電話
-                  </label>
-                  <input
-                    class="appearance-none inline-block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="grid-first-name" type="text" placeholder=""> <span class="text-sm"></span>
-                </div>
-              </div>
-              <!--END ROW -->
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 font-normal mb-2" for="grid-first-name">
-                    其他注意事項
-                  </label>
-                  <textarea
-                    class="appearance-none inline-block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-64"
-                    id="grid-first-name" type="text" placeholder=""></textarea>
-                </div>
-              </div>
-              <!--END ROW -->
-            </div> <!-- Righ Col -->
-          </div>
-          <div class="flex flex-wrap">
+            </div> <!-- Right Col -->
+          </div> <!-- End Row -->
+          <div class="flex flex-wrap mt-4">
             <div class="w-full md:w-3/12"></div><!-- Left Col -->
             <div class="w-full md:w-9/12 text-center">
-              <button class="rounded inline-block px-8 py-3 bg-blue-700 text-white">送出</button>
+              <button class="rounded inline-block px-8 py-3 border border-blue-700 text-blue-700">回上一頁</button>
             </div><!-- Left Col -->
           </div>
         </div>
