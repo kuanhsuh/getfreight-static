@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans text-gray-800">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css">
+  <title>Document</title>
+  <style>
+    th,
+    td {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="py-4 sticky top-0 bg-white shadow z-50">
+    <div class="container mx-auto px-4 md:px-0">
+      <div class="flex flex-wrap justify-between items-end relative">
+        <a href="#">
+          <div class="inline-block h-12 bg-gray-500 w-32 rounded"></div>
+        </a>
+        <ul class="hidden md:flex md:items-end md:w-auto">
+          <li class="px-2">歡迎: normal@gmail.com <span
+              class="text-xs p-2 rounded inline-block bg-teal-400 text-white">一般使用者</span>
+          </li>
+          <li class="px-2"><a href="#" class="rounded inline-block px-8 py-3 bg-blue-700 text-white">儲值</a></li>
+          <li class="px-2"><a href="#" class="rounded inline-block px-8 py-3 bg-gray-300">登出</a></li>
+        </ul>
+        <span onclick="toggleMenu()" class="block md:hidden">
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+          <span class="block" style="height: 1px; background-color: #000; margin: 6px 0; width: 25px;"></span>
+        </span>
+        <ul id="responsive" class="w-full text-center md:hidden bg-white shadow-md"
+          style="position: absolute; z-index: 10; top: 73px; left: 0">
+          <li class="py-2"><a href="#">註冊</a></li>
+          <li class="py-2"><a href="#">登陸</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="flex">
+      <div class="w-2/12 h-screen">
+        <div class="py-6 px-6 flex items-center font-light" style="border-bottom: 1px solid #CFD8DC;">
+          <span class="inline-block rounded-full h-12 w-12 bg-blue-600 mr-4"></span>
+          normal 用戶
+        </div>
+        <div class="py-4 px-6 flex items-center  font-medium" style="border-bottom: 1px solid #CFD8DC;">
+          <a href="#">後台首頁</a>
+        </div>
+        <div class="py-4 px-6 font-medium" style="border-bottom: 1px solid #CFD8DC;">
+          <h3 class="mb-2">詢價單</h3>
+          <ul class="font-normal">
+            <li class="py-1"><a href="#">所有詢價單</a></li>
+            <li class="py-1"><a href="#">新增詢價單(海運/併櫃)</a></li>
+            <li class="py-1"><a href="#">新增詢價單(空運)</a></li>
+            <li class="py-1"><a href="#">新增詢價單(其他)</a></li>
+          </ul>
+        </div>
+        <div class="py-4 px-6 font-medium" style="border-bottom: 1px solid #CFD8DC;">
+          <h3 class="mb-2">會員</h3>
+          <ul class="font-normal">
+            <li class="py-1"><a href="#">修改基本資料</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-10/12 bg-gray-200 h-screen">
+        <div class="container mx-auto py-8 max-w-5xl">
+          <!-- Charts -->
+          <h2 class="font-medium text-xl mt-12">詢價單編號-2341 | 整體報價單(空運)</h2>
+          <table class="table w-full mt-4 bg-white">
+            <thead class="bg-teal-500 text-white font-medium">
+              <tr>
+                <th scope="col" class="w-3/12">費用</th>
+                <th scope="col" class="w-3/12">日期</th>
+                <th scope="col" class="w-3/12">聯絡方式</th>
+                <th scope="col" class="w-3/12">其他注意</th>
+              </tr>
+            </thead>
+            <tbody class="text-left">
+              <tr>
+                <th>
+                  空運費：10,000 NTD<br />
+                  倉租費: 5,000 NTD<br />
+                  報關費: 5,000/SET NTD<br />
+                  連線費: 5,000/SET NTD<br />
+                  傳輸費: 5,000/SET NTD<br />
+                  其他費用: 5,000 NTD<br />
+                </th>
+                <td>
+                  報關期限：2019.12.31<br />
+                  航空公司: Eva China Air<br />
+                  一週幾航班: 禮拜一 | 禮拜三 | 禮拜四<br />
+                  預計航程: 5,000 /SET<br />
+                </td>
+                <td>
+                  名字: 黃冠勳<br />
+                  電話: 0988-111-333<br />
+                </td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequatur.
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  空運費：10,000 NTD<br />
+                  倉租費: 5,000 NTD<br />
+                  報關費: 5,000/SET NTD<br />
+                  連線費: 5,000/SET NTD<br />
+                  傳輸費: 5,000/SET NTD<br />
+                  其他費用: 5,000 NTD<br />
+                </th>
+                <td>
+                  報關期限：2019.12.31<br />
+                  航空公司: Eva China Air<br />
+                  一週幾航班: 禮拜一 | 禮拜三 | 禮拜四<br />
+                  預計航程: 5,000 /SET<br />
+                </td>
+                <td>
+                  名字: 黃冠勳<br />
+                  電話: 0988-111-333<br />
+                </td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequatur.
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  空運費：10,000 NTD<br />
+                  倉租費: 5,000 NTD<br />
+                  報關費: 5,000/SET NTD<br />
+                  連線費: 5,000/SET NTD<br />
+                  傳輸費: 5,000/SET NTD<br />
+                  其他費用: 5,000 NTD<br />
+                </th>
+                <td>
+                  報關期限：2019.12.31<br />
+                  航空公司: Eva China Air<br />
+                  一週幾航班: 禮拜一 | 禮拜三 | 禮拜四<br />
+                  預計航程: 5,000 /SET<br />
+                </td>
+                <td>
+                  名字: 黃冠勳<br />
+                  電話: 0988-111-333<br />
+                </td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequatur.
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  空運費：10,000 NTD<br />
+                  倉租費: 5,000 NTD<br />
+                  報關費: 5,000/SET NTD<br />
+                  連線費: 5,000/SET NTD<br />
+                  傳輸費: 5,000/SET NTD<br />
+                  其他費用: 5,000 NTD<br />
+                </th>
+                <td>
+                  報關期限：2019.12.31<br />
+                  航空公司: Eva China Air<br />
+                  一週幾航班: 禮拜一 | 禮拜三 | 禮拜四<br />
+                  預計航程: 5,000 /SET<br />
+                </td>
+                <td>
+                  名字: 黃冠勳<br />
+                  電話: 0988-111-333<br />
+                </td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequatur.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mt-4 font-medium text-teal-900 text-right">
+            <a href="#" class="bg-blue-700 p-4 rounded inline-block text-white">PDF 下載</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer 頁尾 -->
+  <footer class="bg-blue-900 py-8" style="height: 300px;"></footer>
+
+  <script>
+    function toggleMenu() {
+      var navMenu = document.querySelector("#responsive")
+      navMenu.classList.toggle("hidden");
+    }
+
+  </script>
+</body>
+
+</html>
