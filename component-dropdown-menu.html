@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans text-gray-800">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css">
+  <title>Document</title>
+
+  <style>
+    td {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body class="p-10">
+  <div class="flex flex-wrap">
+    <div class="w-full sm:w-1/2">
+      <label for="" class="mb-2 text-xl">終點港口</label>
+      <input onkeyup="displayDropdown()" id="destinationHarbor"
+        class="appearance-none inline-block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+        id="grid-first-name" type="text" placeholder="">
+
+      <ul class="block uppercase bg-gray-300 rounded hidden">
+        <li class="p-2 mb-2 border-b border-gray-200 ">LOFER, AUSTRIA[ZIP:5090]</li>
+        <li class="p-2 mb-2 border-b border-gray-200">LOCHRISTI, BELGIUM[ZIP:9080]</li>
+        <li class="p-2 mb-2 border-b border-gray-200">LONGVILLY, BELGIUM[ZIP:6600]</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <script>
+    function displayDropdown() {
+      var destinationHarborInput = document.querySelector('#destinationHarbor');
+      var dropdownClassList = destinationHarborInput.nextElementSibling.classList
+      // if (destinationHarborInput.value.length > 0) {
+      //   destinationHarborInput.nextElementSibling.classList.remove("hidden")
+      // }
+
+      // if (destinationHarborInput.value.length === 0) {
+      //   destinationHarborInput.nextElementSibling.classList.add("hidden")
+      // }
+
+      destinationHarborInput.value.length > 0 ? dropdownClassList.remove("hidden") :
+        dropdownClassList.add("hidden")
+    }
+
+  </script>
+</body>
+
+</html>
