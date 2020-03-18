@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css" />
+</head>
+
+<body class="py-20 text-gray-800 font-light">
+  <div class="container mx-auto border p-8 rounded-lg shadow">
+    <h1 class="text-3xl font-bold mb-6 text-teal-500 flex items-center">
+      付款成功
+      <svg class="w-10 fill-current ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path class="heroicon-ui"
+          d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 011.4 1.42l-4 4a1 1 0 01-1.4 0l-2-2a1 1 0 011.4-1.42z" />
+      </svg>
+    </h1>
+    <ul>
+      <li class="py-1">
+        <span class="font-medium">訂單編號:</span> E1234qwer
+      </li>
+      <li class="py-1">
+        <span class="font-medium">本次付款金額為:</span> 10000$
+      </li>
+      <li class="py-1">
+        <span class="font-medium">說明:</span>
+        失求約面因經入紅有花綠望基著受制根的他你童：已團終爾廣美斯字在輕當其經，影未心於育樣日印夠……日點過下分。她一天把容活野的基，力的政中手大點什態樹果究足的情童。後間時著向果及多團史雙大麗人方李是法。
+      </li>
+    </ul>
+  </div>
+
+  <div class="container mx-auto border p-8 rounded-lg shadow mt-20">
+    <h1 class="text-3xl font-bold mb-6 text-red-500 flex items-center">
+      付款失敗
+      <svg class="w-10 fill-current ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path class="heroicon-ui"
+          d="M4.93 19.07A10 10 0 1119.07 4.93 10 10 0 014.93 19.07zm1.41-1.41A8 8 0 1017.66 6.34 8 8 0 006.34 17.66zM13.41 12l1.42 1.41a1 1 0 11-1.42 1.42L12 13.4l-1.41 1.42a1 1 0 11-1.42-1.42L10.6 12l-1.42-1.41a1 1 0 111.42-1.42L12 10.6l1.41-1.42a1 1 0 111.42 1.42L13.4 12z" />
+      </svg>
+    </h1>
+    <p>請重新付款，或有任何問題請洽系統管理中</p>
+  </div>
+</body>
+
+</html>
+
+<!-- <h1><%= @checkout_result ? "付款成功" : "付款失敗" %></h1>
+<% if @checkout_result %>
+<div><span>訂單編號: <%= @callback_data['icpOrderId'] %></span></div>
+<div><span>本次付款金額為: <%= @callback_data['price'] %></span></div>
+<div><span>說明: <%= @callback_data['memo'] %></span></div>
+<% else %>
+<span>請重新付款，或有任何問題請洽系統管理中</span>
+<% end %>
+<%= link_to "繼續前往付款>>", freight_checkout_path %> -->
